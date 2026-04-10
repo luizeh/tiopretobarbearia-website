@@ -67,13 +67,13 @@
 
     <!-- ══════════════ PRODUTOS ══════════════ -->
     <section id="produtos">
-      <div class="section-header fade-in">
+      <div class="section-header ">
         <span class="section-eyebrow">Linha de Produtos</span>
         <h2 class="section-title">Para o seu Estilo</h2>
       </div>
 
       <div class="products-grid">
-        <div class="product-card fade-in">
+        <div class="product-card ">
           <div class="product-image-wrap">
             <img
               src="img/shampoo.png"
@@ -103,7 +103,7 @@
           </div>
         </div>
 
-        <div class="product-card fade-in">
+        <div class="product-card ">
           <div class="product-image-wrap">
             <img
               src="img/efeitoseco.png"
@@ -128,7 +128,7 @@
           </div>
         </div>
 
-        <div class="product-card fade-in">
+        <div class="product-card ">
           <div class="product-image-wrap">
             <div class="product-image-placeholder">
               <img
@@ -154,7 +154,7 @@
           </div>
         </div>
 
-        <div class="product-card fade-in">
+        <div class="product-card ">
           <div class="product-image-wrap">
             <div class="product-image-placeholder">
               <img src="img/locao.png" alt="Loção pós barba Million" />
@@ -177,7 +177,7 @@
           </div>
         </div>
 
-        <div class="product-card fade-in">
+        <div class="product-card ">
           <div class="product-image-wrap">
             <div class="product-image-placeholder">
               <img src="img/oleo.png" alt="Oleo para barba Million" />
@@ -200,7 +200,7 @@
           </div>
         </div>
 
-        <div class="product-card fade-in">
+        <div class="product-card ">
           <div class="product-image-wrap">
             <div class="product-image-placeholder">
               <img src="img/grooming.png" alt="Grooming Million" />
@@ -229,10 +229,6 @@
     <footer id="contato">
       <div class="footer-top">
         <div class="footer-brand">
-          <!--
-        Logo no footer: Substitua o src.
-        Exemplo: src="logo-tio-preto.png"
-      -->
           <img
             src="LOGO_TIO_PRETO.png"
             alt="Tio Preto Barbearia"
@@ -247,14 +243,11 @@
           <h4>Localização &amp; Horários</h4>
           <ul>
             <li>
-              <i class="fa-solid fa-location-dot"></i> Rua Exemplo, 123 — Bairro, Cidade
+              <i class="fa-solid fa-location-dot"></i> Rua Exemplo, 123 —
+              Bairro, Cidade
             </li>
-            <li>
-              <i class="fa-regular fa-clock"></i> Ter – Sex: 09h às 20h
-            </li>
-            <li>
-              <i class="fa-regular fa-clock"></i> Sábado: 08h ao 12h
-            </li>
+            <li><i class="fa-regular fa-clock"></i> Ter – Sex: 09h às 20h</li>
+            <li><i class="fa-regular fa-clock"></i> Sábado: 08h ao 12h</li>
             <li>
               <i class="fa-regular fa-clock"></i>Domingo e Segunda: Fechado
             </li>
@@ -284,26 +277,9 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 Tio Preto Barbearia — Todos os direitos reservados.</p>
+        <p>© 2026 Tio Preto Barbearia — Todos os direitos reservados.</p>
         <p class="footer-gold">Feito por Luizeh</p>
       </div>
     </footer>
-
-    <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry, i) => {
-            if (entry.isIntersecting) {
-              setTimeout(() => entry.target.classList.add("visible"), i * 80);
-            }
-          });
-        },
-        { threshold: 0.1 },
-      );
-
-      document
-        .querySelectorAll(".fade-in")
-        .forEach((el) => observer.observe(el));
-    </script>
   </body>
 </html>
