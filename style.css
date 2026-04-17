@@ -51,13 +51,10 @@ header {
   align-items: center;
   gap: 14px;
 }
-
-/* Substitua o src pela logo real */
 .header-logo img {
   height: 65px;
   width: auto;
   object-fit: contain;
-  /* Placeholder – troque pelo caminho da sua logo */
 }
 
 .header-logo .brand-text {
